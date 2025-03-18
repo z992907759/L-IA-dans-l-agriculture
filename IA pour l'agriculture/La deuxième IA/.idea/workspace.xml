@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8dfac28-03dd-4654-bd92-25f32ca0346b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../La deuxième IA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/audio/response_20250317_134245.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/audio/response_20250317_134342.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/google_colab_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/google_colab_test_void.py" afterDir="false" />
-    </list>
+    <list default="true" id="e8dfac28-03dd-4654-bd92-25f32ca0346b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -222,7 +217,7 @@
       <workItem from="1742291205682" duration="1010000" />
       <workItem from="1742292220278" duration="1737000" />
       <workItem from="1742293966546" duration="1108000" />
-      <workItem from="1742295083219" duration="7069000" />
+      <workItem from="1742295083219" duration="8834000" />
     </task>
     <servers />
   </component>
