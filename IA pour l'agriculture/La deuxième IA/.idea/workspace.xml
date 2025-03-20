@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8dfac28-03dd-4654-bd92-25f32ca0346b" name="Changes" comment="" />
+    <list default="true" id="e8dfac28-03dd-4654-bd92-25f32ca0346b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/clean_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/data/agriculture_dataset1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/database/knowledge_base/qna-dataset-farmgenie-water-irrigation-v2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/run_evaluation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/.idea/La deuxième IA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/.idea/La deuxième IA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/audio/20250318_192726.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/data_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/data_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/database/faiss_db/index.faiss" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/database/faiss_db/index.faiss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/database/faiss_db/index.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/database/faiss_db/index.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/database/knowledge_base/Agricultural Science (Aflakpui Godwin) (Z-Library).pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/database/knowledge_base/agri-llm-data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/google_colab_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/google_colab_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/model/llama3_lora_colab/adapter_model.safetensors" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/model/llama3_lora_colab/adapter_model.safetensors" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/model/llama3_lora_colab/full_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/model/llama3_lora_colab/full_dataset.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/model/llama3_lora_colab/test_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/model/llama3_lora_colab/test_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/model/llama3_lora_colab/tokenizer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/model/llama3_lora_colab/tokenizer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/model/llama3_lora_colab/train_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../La deuxième IA/Llama3-1b/model/llama3_lora_colab/train_data.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,11 +49,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.clean_data.executor": "Run",
     "Python.data_processor.executor": "Run",
+    "Python.download_data.executor": "Run",
+    "Python.evaluate.executor": "Run",
     "Python.google_colab_test.executor": "Run",
     "Python.google_colab_test_void.executor": "Run",
     "Python.llama3_1b_RAG.executor": "Run",
     "Python.llama3_RAG.executor": "Run",
+    "Python.merged_data.executor": "Run",
+    "Python.model_evaluator.executor": "Run",
+    "Python.run_evaluation.executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -57,11 +82,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Llama3-1b" />
       <recent name="$PROJECT_DIR$/Llama3-1b/database/knowledge_base" />
       <recent name="$PROJECT_DIR$/Llama3-1b/database/faiss_db" />
       <recent name="$PROJECT_DIR$/Llama3-1b/database" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Llama3-1b" />
     </key>
   </component>
   <component name="RunManager" selected="Python.google_colab_test">
@@ -111,7 +136,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="google_colab_test_void" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="merged_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="La deuxième IA" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +150,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Llama3-1b/google_colab_test_void.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Llama3-1b/merged_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,7 +159,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="llama3_RAG" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="model_evaluator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="La deuxième IA" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,7 +173,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Llama3-1b/llama3_RAG.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Llama3-1b/model_evaluator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,7 +182,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="run_evaluation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="La deuxième IA" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,7 +196,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Llama3-1b/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Llama3-1b/run_evaluation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,10 +208,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.google_colab_test" />
+        <item itemvalue="Python.run_evaluation" />
         <item itemvalue="Python.data_processor" />
-        <item itemvalue="Python.llama3_RAG" />
-        <item itemvalue="Python.google_colab_test_void" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.model_evaluator" />
+        <item itemvalue="Python.merged_data" />
       </list>
     </recent_temporary>
   </component>
@@ -218,6 +243,10 @@
       <workItem from="1742292220278" duration="1737000" />
       <workItem from="1742293966546" duration="1108000" />
       <workItem from="1742295083219" duration="8834000" />
+      <workItem from="1742375673855" duration="51000" />
+      <workItem from="1742376773014" duration="122000" />
+      <workItem from="1742377598448" duration="3000" />
+      <workItem from="1742379138597" duration="30396000" />
     </task>
     <servers />
   </component>
@@ -227,9 +256,14 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/La_deuxieme_IA$llama3_1b_RAG.coverage" NAME="llama3_1b_RAG Coverage Results" MODIFIED="1742292358057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/La_deuxieme_IA$llama3_RAG.coverage" NAME="llama3_RAG Coverage Results" MODIFIED="1742306800751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
+    <SUITE FILE_PATH="coverage/La_deuxieme_IA$clean_data.coverage" NAME="clean_data Coverage Results" MODIFIED="1742393063248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
     <SUITE FILE_PATH="coverage/La_deuxieme_IA$test.coverage" NAME="test Coverage Results" MODIFIED="1742293038374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
     <SUITE FILE_PATH="coverage/La_deuxieme_IA$google_colab_test_void.coverage" NAME="google_colab_test_void Coverage Results" MODIFIED="1742305813456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
-    <SUITE FILE_PATH="coverage/La_deuxieme_IA$google_colab_test.coverage" NAME="google_colab_test Coverage Results" MODIFIED="1742322395545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
-    <SUITE FILE_PATH="coverage/La_deuxieme_IA$data_processor.coverage" NAME="data_processor Coverage Results" MODIFIED="1742322371827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
+    <SUITE FILE_PATH="coverage/La_deuxieme_IA$evaluate.coverage" NAME="run_evaluation Coverage Results" MODIFIED="1742457733795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
+    <SUITE FILE_PATH="coverage/La_deuxieme_IA$google_colab_test.coverage" NAME="google_colab_test Coverage Results" MODIFIED="1742461800546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
+    <SUITE FILE_PATH="coverage/La_deuxieme_IA$data_processor.coverage" NAME="data_processor Coverage Results" MODIFIED="1742410391502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
+    <SUITE FILE_PATH="coverage/La_deuxieme_IA$merged_data.coverage" NAME="merged_data Coverage Results" MODIFIED="1742395097779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
+    <SUITE FILE_PATH="coverage/La_deuxieme_IA$model_evaluator.coverage" NAME="model_evaluator Coverage Results" MODIFIED="1742403246656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
+    <SUITE FILE_PATH="coverage/La_deuxieme_IA$download_data.coverage" NAME="download_data Coverage Results" MODIFIED="1742393317724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Llama3-1b" />
   </component>
 </project>
