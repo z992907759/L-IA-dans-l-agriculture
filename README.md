@@ -10,12 +10,12 @@
 RAG:使用了FAISS向量数据库，支持txt,json，~~pdf~~格式的数据  
 
 ### 使用
-使用请运行 google_colab_test.py  
-第一次使用需要运行data_processor.py创建FAISS向量数据库  
+使用请运行 **google_colab_test.py**  
+第一次使用需要运行**data_processor.py**创建FAISS向量数据库  
 如需添加txt、json格式的数据请自行修改相关功能文件
 
 ### 评估
-请运行run_evaluation.py  
+请运行**run_evaluation.py**  
 
 ### 最终检测结果：  
 ✅ BERTScore: 0.3385  
