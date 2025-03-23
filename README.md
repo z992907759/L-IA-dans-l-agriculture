@@ -4,6 +4,7 @@
 1、wisper
 2、llama3-1b
 ## 第一个模型：
+使用 Hugging Face Transformers 与 PyTorch 微调 Whisper 模型，结合 whisper.cpp 实现高效英文语音识别系统，覆盖数据采集、模型训练与部署全流程，优化农业领域词汇识别效果。
 
 ## 第二个模型：
 由于设备所限，使用llama3-1b的模型，再google-colab上运行微调模型，并且只微调了LoRA层，实现了llama3+RAG（检索增强生成）  
