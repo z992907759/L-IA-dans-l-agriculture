@@ -1,16 +1,12 @@
 import os
 import torch
 import math
+import time
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from tqdm import tqdm
 from evaluate import load
 import evaluate
-
-# ✅ 彻底禁用 MPS，防止 PyTorch 误用
-os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "0"
-os.environ["PYTORCH_MPS_HIGH_WATERMARK_RATIO"] = "0.0"
-os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
 class ModelEvaluator:
     def __init__(self, model_path, test_dataset=None):
@@ -19,17 +15,19 @@ class ModelEvaluator:
         :param model_path: 已微调的模型路径
         :param test_dataset: 用于测试的测试集（可选）
         """
-        self.device = torch.device("cpu")  # ✅ 强制使用 CPU
-        print(f"✅ 设备选择: {self.device}")
+        if torch.backends.mps.is_available():
+            self.device = torch.device("mps")
+            print("✅ 当前设备: MPS (Apple GPU)")
+        else:
+            self.device = torch.device("cpu")
+            print("⚠️ 当前设备: CPU")
 
         # ✅ 加载模型（确保 float32，不使用 float16）
         self.model = AutoModelForCausalLM.from_pretrained(
             model_path,
-            torch_dtype=torch.float32,  # ✅ 防止 MPS 设备崩溃
-            device_map={"": "cpu"}  # ✅ 确保在 CPU 运行
-        )
+            torch_dtype=torch.float32
+        ).to(self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
-        self.model.to(self.device)
 
         # ✅ 替换 `load_metric()` 为 `evaluate.load()`
         self.bleu = evaluate.load("bleu")
@@ -39,7 +37,7 @@ class ModelEvaluator:
 
     def calculate_perplexity(self, text):
         """ ✅ 计算 Perplexity（PPL），确保数据在 CPU """
-        encodings = self.tokenizer(text, return_tensors="pt").to("cpu")  # ✅ 强制到 CPU
+        encodings = self.tokenizer(text, return_tensors="pt").to(self.device)  # ✅ 强制到 CPU
 
         with torch.no_grad():
             outputs = self.model(**encodings, labels=encodings["input_ids"])
@@ -75,7 +73,7 @@ class ModelEvaluator:
         with torch.no_grad():
             for sample in tqdm(self.test_dataset, desc="Evaluating Test Set"):
                 text = sample["text"]
-                encodings = self.tokenizer(text, return_tensors="pt").to("cpu")  # ✅ 确保数据在 CPU
+                encodings = self.tokenizer(text, return_tensors="pt").to(self.device)  # ✅ 确保数据在 CPU
                 outputs = self.model(**encodings, labels=encodings["input_ids"])
                 loss = outputs.loss.item()
 
@@ -112,6 +110,14 @@ class ModelEvaluator:
             results["ROUGE"] = gen_scores["ROUGE"]
             print(f"✅ BLEU Score: {gen_scores['BLEU']:.4f}")
             print(f"✅ ROUGE Score: {gen_scores['ROUGE']}")
+
+            # ✅ 计算 BERTScore
+            start = time.time()
+            print("📊 正在计算 BERTScore，请稍等（首次运行可能较慢）...")
+            references = [sample["answers"] for sample in self.test_dataset]
+            predictions = [generate_response(sample["text"]) for sample in tqdm(self.test_dataset, desc="Generating predictions")]
+            bert_score = score(predictions, references, lang="en", model_type="bert-base-uncased")[2].mean().item()
+            print(f"✅ BERTScore 计算完成，用时 {time.time() - start:.2f} 秒")
 
         # 3️⃣ 计算测试集上的损失和 PPL
         test_results = self.test_on_dataset()

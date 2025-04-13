@@ -1,0 +1,7 @@
+com/aichat/service/ChatService.class
+com/aichat/model/ChatMessage.class
+com/aichat/repository/ChatMessageRepository.class
+com/aichat/AiChatApplication.class
+com/aichat/config/WebConfig.class
+com/aichat/controller/ChatController.class
+com/aichat/service/impl/ChatServiceImpl.class
