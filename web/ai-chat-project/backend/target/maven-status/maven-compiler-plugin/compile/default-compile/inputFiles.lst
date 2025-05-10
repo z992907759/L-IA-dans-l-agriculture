@@ -1,0 +1,7 @@
+/Users/goulfrom/ai-chat-project/backend/src/main/java/com/aichat/controller/ChatController.java
+/Users/goulfrom/ai-chat-project/backend/src/main/java/com/aichat/service/ChatService.java
+/Users/goulfrom/ai-chat-project/backend/src/main/java/com/aichat/config/WebConfig.java
+/Users/goulfrom/ai-chat-project/backend/src/main/java/com/aichat/AiChatApplication.java
+/Users/goulfrom/ai-chat-project/backend/src/main/java/com/aichat/service/impl/ChatServiceImpl.java
+/Users/goulfrom/ai-chat-project/backend/src/main/java/com/aichat/repository/ChatMessageRepository.java
+/Users/goulfrom/ai-chat-project/backend/src/main/java/com/aichat/model/ChatMessage.java
